@@ -27,6 +27,9 @@
 # A mapping from shorthand names to include directories.
 #
 pathmap_INCL := \
+    bluedroid:system/bluetooth/bluedroid/include \
+    bluez:external/bluetooth/bluez \
+    glib:external/bluetooth/glib \
     bootloader:bootable/bootloader/legacy/include \
     camera:system/media/camera/include \
     corecg:external/skia/include/core \
@@ -51,6 +54,7 @@ pathmap_INCL := \
     audio-route:system/media/audio_route/include \
     wilhelm:frameworks/wilhelm/include \
     wilhelm-ut:frameworks/wilhelm/src/ut \
+    dbus:external/dbus \
     speex:external/speex/include
 
 ifneq ($(WITH_SIMPLE_RECOVERY),true)
